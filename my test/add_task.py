@@ -1,8 +1,9 @@
 import requests
 
-def test_add():
+def test_add(): # Добавил описание
     body = {"title": "Создать задачу", "completed": False}
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
+    # добавил шагов, логику, ожидания
     response_body = response.json()
     assert response.status_code == 202
     assert response_body['completed'] == False
