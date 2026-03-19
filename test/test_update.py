@@ -10,4 +10,6 @@ def test_update():
     response_update = requests.get("https://todo-app-sky.herokuapp.com/")
     response_update_id = response_update.json()['id']
 
+    # Получить из ответа id не получается
+
     assert response_id == response_update_id
