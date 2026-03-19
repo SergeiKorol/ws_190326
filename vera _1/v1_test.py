@@ -1,7 +1,7 @@
 import requests
 
 
-def get_v1_test():
+def get_v1_test(): # 123
     global id
     body = {"title": "создать задачу", "completed": False}
     response = requests.post("https://sky-todo-list.herokuapp.com/", json=body)
