@@ -2,6 +2,7 @@ import requests
 
 
 def test_edit():
+    #тест на изменение названия задачи
     body = {"title": "generated", "completed": False}
     response = requests.post("https://todo-app-sky.herokuapp.com/", json=body)
     id = response.json()["id"]
